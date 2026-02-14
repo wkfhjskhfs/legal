@@ -3,16 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隐私政策</title>
+    <title>隐私政策 - 心理避难所</title>
     <style>
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; color: #333; }
-        h1 { font-size: 22px; text-align: center; }
-        p { margin-bottom: 10px; }
+        :root {
+            --primary-color: #333;
+            --accent-color: #007AFF;
+            --bg-color: #f9f9f9;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.7; 
+            padding: 40px 20px; 
+            color: var(--primary-color); 
+            max-width: 800px; 
+            margin: 0 auto;
+            background-color: var(--bg-color);
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 { font-size: 26px; text-align: center; margin-bottom: 10px; color: #000; }
+        h2 { font-size: 18px; border-left: 4px solid var(--accent-color); padding-left: 10px; margin-top: 30px; color: #000; }
+        p { margin-bottom: 15px; text-align: justify; }
+        ul { padding-left: 20px; margin-bottom: 20px; }
+        li { margin-bottom: 8px; }
+        .date { text-align: center; color: #888; font-size: 14px; margin-bottom: 30px; }
+        .contact-box { background: #f0f7ff; padding: 15px; border-radius: 8px; border: 1px solid #d0e3ff; }
+        strong { color: #000; }
     </style>
 </head>
 <body>
-    <h1>隐私政策</h1>
-    <p>更新日期：2026年2月9日</p>
-    <p>我们非常重视您的隐私。本政策说明了我们如何收集、使用和保护您的信息...</p>
+    <div class="container">
+        <h1>隐私政策</h1>
+        <p class="date">生效日期：2026年2月14日</p>
+        
+        <p>欢迎使用 <strong>心理避难所</strong>（以下简称“本应用”）。我们深知隐私对您的重要性，并致力于保护您的个人信息。本隐私政策旨在向您说明我们如何收集、使用和保护您的信息。</p>
+
+        <h2>1. 我们收集的信息</h2>
+        <p>为了向您提供核心服务，我们仅收集实现应用功能所必需的最少信息：</p>
+        <ul>
+            <li><strong>注册信息</strong>：当您创建账户时，我们会收集您的 <strong>电子邮件地址</strong>。该信息通过 <strong>Supabase</strong> 进行加密存储和身份验证。</li>
+            <li><strong>本地数据</strong>：我们使用 <strong>Shared Preferences</strong> 在您的设备本地存储必要的应用设置（如登录状态、偏好设置）。这些数据通常保留在您的设备上，不会用于识别您的个人身份。</li>
+        </ul>
+
+        <h2>2. 信息的使用方式</h2>
+        <p>我们收集的信息仅用于以下用途：</p>
+        <ul>
+            <li><strong>身份验证</strong>：验证您的登录状态，确保您可以安全地访问自己的数据。</li>
+            <li><strong>账户安全</strong>：用于找回密码或接收必要的服务通知。</li>
+            <li><strong>用户体验</strong>：通过本地存储记住您的偏好，提升使用流畅度。</li>
+        </ul>
+
+        <h2>3. 第三方服务插件</h2>
+        <p>本应用集成了以下第三方服务，它们可能会处理您的部分数据：</p>
+        <ul>
+            <li><strong>Supabase (身份验证与数据库)</strong>：我们使用 Supabase 存储您的账户信息和应用数据。数据存储在受行业标准保护的安全云服务器上。</li>
+        </ul>
+
+        <h2>4. 数据安全</h2>
+        <p>我们采取了严格的技术手段保护您的数据，防止信息泄露、滥用或篡改。所有与服务器的通信均通过加密协议（HTTPS）传输。</p>
+
+        <h2>5. 您的权利：注销与删除</h2>
+        <p>根据 Apple 的最新政策和隐私法规，您拥有以下权利：</p>
+        <ul>
+            <li><strong>更正/删除</strong>：您可以随时通过应用设置或联系我们要求更正或删除您的个人信息。</li>
+            <li><strong>注销账户</strong>：您可以在应用内选择<strong>“注销账户”</strong>，我们将从云端永久删除您的电子邮件地址及关联的所有数据。</li>
+        </ul>
+
+        <h2>6. 联系我们</h2>
+        <p>如果您对本隐私政策有任何疑问、意见或注销请求，请通过以下方式联系我们：</p>
+        <div class="contact-box">
+            <strong>电子邮箱：</strong> <a href="mailto:erinoryue@outlook.com">erinoryue@outlook.com</a>
+        </div>
+    </div>
 </body>
 </html>
